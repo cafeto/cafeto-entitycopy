@@ -83,14 +83,15 @@ public class EntityCopy {
 	 * @throws IllegalAccessException
 	 */
 	@SuppressWarnings("unchecked")
-	public static synchronized <T> T copy(final T copy, DeepCopy deepCopy, Class<?> parentClass)
+	public static synchronized <T> T copy(final T entity, DeepCopy deepCopy, Class<?> parentClass)
 			throws InstantiationException, IllegalAccessException {
-		if (copy == null) {
+		if (entity == null) {
 			return null;
 		}
 
-		T source = copy;
+		T source = entity;
 		Class<T> clazz = (Class<T>) source.getClass();
+
 		if (!clazz.isAnnotationPresent(Entity.class)) {
 			return source;
 		}
