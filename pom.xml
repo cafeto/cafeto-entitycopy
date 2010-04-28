@@ -1,10 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.cafeto.entitycopy</groupId>
 	<artifactId>cafeto-entitycopy</artifactId>
 	<version>0.5.1-SNAPSHOT</version>
 	<name>Cafeto Entity Copy</name>
 	<description>Entity Copy Utility</description>
+	<scm>
+		<connection>scm:git:git@github.com:cafeto/cafeto-entitycopy.git</connection>
+		<url>scm:git:git@github.com:cafeto/cafeto-entitycopy.git</url>
+		<developerConnection>scm:git:git@github.com:cafeto/cafeto-entitycopy.git</developerConnection>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
@@ -22,21 +28,16 @@
 			</plugin>
 		</plugins>
 	</build>
-	<scm>
-		<connection>scm:git:git@github.com:cafeto/cafeto-entitycopy.git</connection>
-		<url>scm:git:git@github.com:cafeto/cafeto-entitycopy.git</url>
-		<developerConnection>scm:git:git@github.com:cafeto/cafeto-entitycopy.git</developerConnection>
-	</scm>
 	<distributionManagement>
 		<repository>
-			<id>local-releases</id>
-			<name>Local Releases Repo</name>
-			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+			<id>sonatype-nexus-staging</id>
+			<name>Nexus Release Repository</name>
+			<url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 		</repository>
 		<snapshotRepository>
-			<id>local-snapshots</id>
-			<name>Local Snapshots Repo</name>
-			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>
