@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.cafeto.entitycopy</groupId>
 	<artifactId>cafeto-entitycopy</artifactId>
-	<version>0.5.3</version>
+	<version>0.5.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Cafeto Entity Copy</name>
 	<description>Utility for make copies of JPA Entities</description>
